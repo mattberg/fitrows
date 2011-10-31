@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Fit Rows Example</title>
+	<meta name="description" content="Demo showing how fit rows works.">
+	<meta name="author" content="Matt Berg">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<style>
+		ul, li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			float: left;
+		}
+		
+		#example-01 {
+			width: 660px;
+		}
+		#example-01 li {
+			margin-right: 20px;
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<header>
+			<h1>Fit Rows Example</h1>
+		</header>
+		
+		<div id="main" role="main">
+		
+			<div id="example-01">
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis porta scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia, justo sed semper viverra, ipsum ligula vulputate lacus, id viverra justo nibh vel elit. Proin volutpat viverra erat in commodo.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis porta scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia, justo sed semper viverra, ipsum ligula vulputate lacus, id viverra justo nibh vel elit. Proin volutpat viverra erat in commodo. Donec laoreet ullamcorper justo vel adipiscing. Suspendisse eu turpis eu arcu ullamcorper rhoncus. Pellentesque tristique, dolor id viverra pretium, urna erat vehicula diam, at tristique lorem orci non magna.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+					<li>Duis convallis porta scelerisque.</li>
+				</ul>
+			</div>
+
+		</div>
+		
+	</div>
+
+	<script src="jquery-1.6.4.min.js"></script>
+	<script src="../fitrows.js"></script>
+	<script>
+	(function($) {
+		$(document).ready(function() {
+			$("#example-01 li").fitrows();
+		});
+	})(jQuery);
+	</script>
+
+</body>
+</html>
